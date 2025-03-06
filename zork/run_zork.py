@@ -7,17 +7,18 @@ import select
 import sys
 from ai_handle import ai_bot
 from memory_handle import memory_manager
+# Now you can use ai_bot and memory_manager
 
 shared_bot_instance = ai_bot()
 
 # Initialize memory manager with the shared bot instance
-memory_client = memory_manager(ai_bot_instance=shared_bot_instance, filepath="zork/zork_memory_db.json")
+memory_client = memory_manager(ai_bot_instance=shared_bot_instance, filepath="zork/game_memory_db.json")
 
 
 # Start Zork in Frotz with proper terminal settings
 
 process = subprocess.Popen(
-    ["frotz", "zork/zork1.dat"],
+    ["frotz", "zork/ZORK1.DAT"],
     stdin=subprocess.PIPE,
     stdout=subprocess.PIPE,
     stderr=subprocess.PIPE,
@@ -82,7 +83,7 @@ def main():
     try:
         while process.poll() is None:  # Check if process is still running
             mem_structure=memory_client.get_memory_structure()
-            ai_action, ai_thoughts = shared_bot_instance.adventure_response(mem_structure, "You are an AI agent in the text adventure world of Zork I, you are tasked on exploring this environment via reasoning and commands to explore all it has to offer. For your response, make sure to only use commands that Zork would recognize.")
+            ai_action, ai_thoughts = shared_bot_instance.adventure_response(mem_structure, "You are an AI agent in a text adventure game, you are tasked on exploring this environment via reasoning and commands to explore all it has to offer. For your response, make sure to only use commands that a CLI Text Adventure would recognize.")
 
             memory_snippet= f"Thoughts: {ai_thoughts}\n Action:{ai_action}"
             #print(f"this is our snippet! {memory_snippet}")
@@ -121,5 +122,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-
 
