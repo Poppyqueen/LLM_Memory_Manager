@@ -18,7 +18,7 @@ memory_client = memory_manager(ai_bot_instance=shared_bot_instance, filepath="zo
 # Start Zork in Frotz with proper terminal settings
 
 process = subprocess.Popen(
-    ["frotz", "zork/ZORK1.DAT"],
+    ["frotz", "zork/ZORK1.DAT"], # Changing this to any other Z-Machine game should be enough to set up the agent to play it.
     stdin=subprocess.PIPE,
     stdout=subprocess.PIPE,
     stderr=subprocess.PIPE,
