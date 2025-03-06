@@ -1,4 +1,4 @@
-# Zork I Interactive Example: AI with Memory
+# frotz Interactive Example: AI with Memory
 
 This example demonstrates the `memory_handle.py`.  Here, we use the memory system to enable an AI to interact with the classic text adventure game **Zork I**. (It should work with any game compatible with Z-code interpreters see [https://ifdb.org])
 
@@ -17,18 +17,9 @@ This is **not** intended to be a perfect Zork-solving AI. The primary goal is to
 
 To run this example, you need to install the following and obtain the game data file:
 
-1.  **Frotz Interpreter:**  You need to have `frotz` installed on your system. `frotz` is a popular interpreter for Infocom-style Interactive Fiction games (like Zork).
+1.  **Frotz Interpreter:**  You need to have `frotz` installed on your system. `frotz` is a popular interpreter for Infocom-style Interactive Fiction games (like Zork). see [https://davidgriffith.gitlab.io/frotz/]
 
-    *   **Linux/macOS:**  Typically, you can install `frotz` using your system's package manager. For example:
-        *   **Debian/Ubuntu:** `sudo apt-get install frotz`
-        *   **macOS (using Homebrew):** `brew install frotz`
-        *   **macOS (using MacPorts):** `sudo port install frotz`
-        *   **Arch Linux:** `sudo pacman -S frotz`
-        *   Consult your distribution's documentation for the correct package name if these don't work.
-
-    *   **Windows:** You can download pre-compiled binaries of `frotz` for Windows from various sources online. Search for "frotz windows download." Ensure you download from a reputable source.  Alternatively, you might be able to use package managers like Chocolatey or Scoop if you have them installed.
-
-2.  **ZORK1.DAT Game File:** You need to obtain a copy of the game data file for Zork I, typically named `ZORK1.DAT`.  **We do not provide this file due to copyright restrictions.**
+2.  **ZORK1.DAT Game File:** You need to obtain a copy of the game data file for Zork I (typically named ZORK1.DAT, or any other Z-code game) .  **We do not provide this file due to copyright restrictions.**
 
     *   **Legally Obtaining ZORK1.DAT:**  The most reliable way to obtain `ZORK1.DAT` legally is often through compilations of classic Interactive Fiction games that might be available for purchase or from abandonware sites that host them with permission.  Please ensure you are obtaining the file legally.  Searching online for "ZORK I download legal" might provide some leads, but be cautious about download sources and copyright. 
 
