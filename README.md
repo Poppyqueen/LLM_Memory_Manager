@@ -4,6 +4,7 @@
 
 This project is a command-line interface (CLI) chatbot that integrates a memory management system with an AI module powered by OpenAI's models. The chatbot is designed to maintain context and learn from conversations through a layered memory system, allowing for more engaging and coherent interactions over time.
 
+
 **Key Features:**
 
 *   **Memory-Enabled:**  The chatbot utilizes a persistent memory system to store and recall conversation history.
@@ -121,6 +122,9 @@ Once the chatbot is running, you can interact with it through the CLI.
     *   `!check`:  Manually triggers a memory check and summarization process. This is normally done automatically, but this command forces an immediate check.
     *   `!clear`: Clears the terminal screen and redisplays the welcome message and instructions.
     *   `!help`:  Shows the welcome message and instructions again, listing available commands.
+ 
+
+*  **Memory Structures:** While conversing with the bot, take a look at the JSON file created and managed, it contains the memories of the bot, as you have more exchanges, looking at the real-time changes on the JSON structures will help you understand the system in the most visual way possible, and will let you know exactly what the bot has it it's knowledge.
 
 ## Memory System Details
 
@@ -142,7 +146,7 @@ You can customize various aspects of the chatbot:
 
 *   **Memory Thresholds and Keep Counts:**  You can adjust the memory thresholds (`SHORT_TERM_THRESHOLD`, `LONG_TERM_THRESHOLD`) and keep counts (`SHORT_TERM_KEEP_COUNT`, `LONG_TERM_KEEP_COUNT`) in `memory_handle.py` to control how frequently memory summarization and purging occur.
 
-*   **AI Model:**  The OpenAI model used is currently hardcoded as `"gpt-4o-mini"` in `ai_handle.py`. You can change this to experiment with other OpenAI models (e.g., `"gpt-4o"`, `"gpt-3.5-turbo"`). Be aware of the pricing differences and capabilities of different models.
+*   **AI Model:**  The OpenAI model used is currently hardcoded as `"gpt-4o-mini"` in `ai_handle.py`. You can change this to experiment with other OpenAI models (e.g., `"gpt-4o"`, `"gpt-4"`). Be aware of the pricing differences and capabilities of different models.
 
 *   **Summarization Prompts:**  The prompts used for summarizing short-term and long-term memories are defined in the `summarize_memories` function in `ai_handle.py`. You can refine these prompts to improve the quality and focus of the summaries.
 
@@ -153,3 +157,10 @@ This project is open-source and available under the [Creative Commons Zero v1.0 
 ## Author
 
 [ExperimentalistRat]
+
+
+## Author Notes
+
+The layered memory system architecture implemented in this project is, in my experience, best understood through practical examples. Although not yet rigorously stress-tested, I believe it provides a functional and potentially effective module for managing memory in AI systems, and I hope it serves as a useful resource for other developers.
+
+I am sharing this project as a more direct and accessible means of demonstrating its design and functionality. 
