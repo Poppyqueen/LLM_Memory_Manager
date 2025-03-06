@@ -49,14 +49,21 @@ Follow these steps to get the chatbot up and running on your local machine.
 
 ### Installation
 
-1.  **Clone the repository:**
+1. **Highly Recommended (Optional):** Create a Virtual Environment
+
+It is strongly recommended to create a virtual environment for this project. Virtual environments help isolate project dependencies, preventing conflicts with other Python projects on your system. This ensures that the libraries required for LLM_Memory_Manager are installed in a dedicated space and don't interfere with your global Python installation or other projects.
+
+
+
+
+2.  **Clone the repository:**
 
     ```bash
-    git clone https://github.com/Poppyqueen/LLM_Memory_Manager  # Replace [repository_url] with the actual repository URL
-    cd LLM_Memory_Manager # Navigate into the cloned directory
+    git clone https://github.com/Poppyqueen/LLM_Memory_Manager
+    cd LLM_Memory_Manager
     ```
 
-2.  **Install required Python libraries:**
+3.  **Install required Python libraries:**
 
     ```bash
     pip install -r requirements.txt
