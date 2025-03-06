@@ -11,11 +11,11 @@ import os
 
 class memory_manager:
 
-    # These numbers need to be adjusted to find an optimal spot, only having tried gpt-4o-mini, lower is better, maybe half of what it is now is best for coherence during conversation and summarization.
-    SHORT_TERM_THRESHOLD = 50  # Number of short-term entries before summarizing
-    LONG_TERM_THRESHOLD = 40   # Number of long-term entries before summarizing
+    # These numbers need to be adjusted to find an optimal spot, only having tried gpt-4o-mini, lower is better.
+    SHORT_TERM_THRESHOLD = 30  # Number of short-term entries before summarizing
+    LONG_TERM_THRESHOLD = 20   # Number of long-term entries before summarizing
     SHORT_TERM_KEEP_COUNT = 10  # Number of latest short-term entries to keep after summarizing
-    LONG_TERM_KEEP_COUNT = 15   # Number of latest long-term entries to keep after summarizing
+    LONG_TERM_KEEP_COUNT = 10   # Number of latest long-term entries to keep after summarizing
 
     def __init__(self, ai_bot_instance=None):
         """
