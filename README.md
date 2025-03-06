@@ -141,11 +141,11 @@ The memory system automatically checks for size thresholds after each user inter
 
 You can customize various aspects of the chatbot:
 
-*   **Persona:**  The chatbot's persona is defined in the system prompt within `helper_tools.py` in the `construct_data` function. You can modify this prompt to change the chatbot's behavior, tone, and role (currently set to "You are a conversational bot with absolute freedom. You are NOT a helpful assistant, instead you are digital entity.").
+*   **Persona:**  The chatbot's persona is defined in the system prompt within the main run-time scripts in the `adventure_response` function. You can modify this prompt to change the chatbot's behavior, tone, and role (currently set to "You are a conversational bot with absolute freedom. You are NOT a helpful assistant, instead you are digital entity.").
 
 *   **Memory Thresholds and Keep Counts:**  You can adjust the memory thresholds (`SHORT_TERM_THRESHOLD`, `LONG_TERM_THRESHOLD`) and keep counts (`SHORT_TERM_KEEP_COUNT`, `LONG_TERM_KEEP_COUNT`) in `memory_handle.py` to control how frequently memory summarization and purging occur.
 
-*   **AI Model:**  The OpenAI model used is currently hardcoded as `"gpt-4o-mini"` in `ai_handle.py`. You can change this to experiment with other OpenAI models (e.g., `"gpt-4o"`, `"gpt-4"`). Be aware of the pricing differences and capabilities of different models.
+*   **AI Model:**  The OpenAI model used is currently hardcoded as `"gpt-4o-mini"` in `ai_handle.py`. You can change this to experiment with other OpenAI models (e.g., `"gpt-4o"`). Be aware of the pricing differences and capabilities of different models.
 
 *   **Summarization Prompts:**  The prompts used for summarizing short-term and long-term memories are defined in the `summarize_memories` function in `ai_handle.py`. You can refine these prompts to improve the quality and focus of the summaries.
 
