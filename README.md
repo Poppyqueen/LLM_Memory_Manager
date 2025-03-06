@@ -52,8 +52,8 @@ Follow these steps to get the chatbot up and running on your local machine.
 1.  **Clone the repository:**
 
     ```bash
-    git clone [repository_url]  # Replace [repository_url] with the actual repository URL
-    cd [LLM_Memory_Manager] # Navigate into the cloned directory
+    git clone https://github.com/Poppyqueen/LLM_Memory_Manager  # Replace [repository_url] with the actual repository URL
+    cd LLM_Memory_Manager # Navigate into the cloned directory
     ```
 
 2.  **Install required Python libraries:**
