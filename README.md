@@ -2,11 +2,13 @@
 
 ## Project Description
 
-This project demonstrates a layered memory system for Large Language Models. While a CLI chatbot provides a basic example, another included demonstration is an experimental script that uses the memory module to interact with the classic text adventure game, Zork I using 'FROTZ' [https://davidgriffith.gitlab.io/frotz/] (A Portable Z-Machine Interpreter). This script showcases how the memory system can maintain context and state in a turn-based interactive environment, going beyond simple conversational exchanges. Please see the zork directory  for details and setup instructions.
+This project demonstrates a layered memory system for Large Language Models. 
+
+While a *CLI chatbot* provides a basic example, another included demonstration is an experimental script that uses the memory module to interact with the classic text adventure game, Zork I, using 'FROTZ' [https://davidgriffith.gitlab.io/frotz/] (A Portable Z-Machine Interpreter). This script showcases how the memory system can maintain context and state in a turn-based interactive environment, going beyond simple conversational exchanges. Please see the zork directory  for details and setup instructions.
 
 **Key Features:**
 
-*   **Memory-Enabled:**  The chatbot utilizes a persistent memory system to store and recall conversation history.
+*   **Memory-Enabled:**  The bot utilizes a persistent memory system to store and recall conversation history.
 *   **Layered Memory:** Features short-term, long-term, and base memory to manage different aspects of conversation context and knowledge.
 *   **Automatic Memory Management:**  Periodically checks memory size and summarizes content to prevent information overload and maintain relevance.
 *   **CLI Interface:**  Provides a simple and direct command-line interface for interacting with the chatbot.
