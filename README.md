@@ -2,8 +2,7 @@
 
 ## Project Description
 
-This project is a command-line interface (CLI) chatbot that integrates a memory management system with an AI module powered by OpenAI's models. The chatbot is designed to maintain context and learn from conversations through a layered memory system, allowing for more engaging and coherent interactions over time.
-
+"This project demonstrates a layered memory system for Large Language Models. While a CLI chatbot provides a basic example, another included demonstration is an experimental script that uses the memory module to interact with the classic text adventure game, Zork I. This script showcases how the memory system can maintain context and state in a turn-based interactive environment, going beyond simple conversational exchanges. Please see the zork directory  for details and setup instructions."
 
 **Key Features:**
 
