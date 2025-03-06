@@ -1,6 +1,6 @@
 # Zork I Interactive Example: AI with Memory
 
-This example demonstrates the `memory_handle.py`.  Here, we use the memory system to enable an AI to interact with the classic text adventure game **Zork I**.
+This example demonstrates the `memory_handle.py`.  Here, we use the memory system to enable an AI to interact with the classic text adventure game **Zork I**. (It should work with any game compatible with Z-code interpreters see [https://ifdb.org])
 
 **What it Does:**
 
@@ -30,7 +30,7 @@ To run this example, you need to install the following and obtain the game data 
 
 2.  **ZORK1.DAT Game File:** You need to obtain a copy of the game data file for Zork I, typically named `ZORK1.DAT`.  **We do not provide this file due to copyright restrictions.**
 
-    *   **Legally Obtaining ZORK1.DAT:**  The most reliable way to obtain `ZORK1.DAT` legally is often through compilations of classic Interactive Fiction games that might be available for purchase or from abandonware sites that host them with permission.  Please ensure you are obtaining the file legally.  Searching online for "ZORK I download legal" might provide some leads, but be cautious about download sources and copyright.
+    *   **Legally Obtaining ZORK1.DAT:**  The most reliable way to obtain `ZORK1.DAT` legally is often through compilations of classic Interactive Fiction games that might be available for purchase or from abandonware sites that host them with permission.  Please ensure you are obtaining the file legally.  Searching online for "ZORK I download legal" might provide some leads, but be cautious about download sources and copyright. 
 
     *   **Placement:** Once you have `ZORK1.DAT`, you must place it in the **`zork` folder** within the `LLM_Memory_Manager` project directory, alongside the `run_zork.py` script.  So the path should be: `LLM_Memory_Manager/zork/ZORK1.DAT`.
 
