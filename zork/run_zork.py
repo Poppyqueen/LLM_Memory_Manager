@@ -1,4 +1,4 @@
-# run.py
+# run_zork.py
 
 import subprocess
 import time
