@@ -1,6 +1,6 @@
 # frotz Interactive Example: AI with Memory
 
-This example demonstrates the `memory_handle.py`.  Here, we use the memory system to enable an AI to interact with the classic text adventure game **Zork I**. (It should work with any game compatible with Z-code interpreters see [https://ifdb.org])
+This example demonstrates the `memory_handle.py`.  Here, we use the memory system to enable an AI to interact with the classic text adventure game **Zork I**. (It should work with any game compatible with Z-code interpreters see [https://ifdb.org] [https://ifdb.org/search?searchbar=z-code])
 
 **What it Does:**
 
