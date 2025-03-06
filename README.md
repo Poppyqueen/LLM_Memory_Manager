@@ -2,7 +2,7 @@
 
 ## Project Description
 
-"This project demonstrates a layered memory system for Large Language Models. While a CLI chatbot provides a basic example, another included demonstration is an experimental script that uses the memory module to interact with the classic text adventure game, Zork I. This script showcases how the memory system can maintain context and state in a turn-based interactive environment, going beyond simple conversational exchanges. Please see the zork directory  for details and setup instructions."
+This project demonstrates a layered memory system for Large Language Models. While a CLI chatbot provides a basic example, another included demonstration is an experimental script that uses the memory module to interact with the classic text adventure game, Zork I. This script showcases how the memory system can maintain context and state in a turn-based interactive environment, going beyond simple conversational exchanges. Please see the zork directory  for details and setup instructions.
 
 **Key Features:**
 
