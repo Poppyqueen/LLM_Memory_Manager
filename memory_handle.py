@@ -286,11 +286,11 @@ if __name__ == "__main__":
     # Let's work with the default one for the rest of the example as before
 
     # Fill up short-term memory to trigger check
-    for i in range(15):
+    for i in range(31):
         memory_system_default.save_to_memory(f"Short-term message {i+1} from User.", "short_term", "user")
 
     # Fill up long-term memory to trigger check
-    for i in range(8):
+    for i in range(21):
         memory_system_default.save_to_memory(f"Long-term memory entry {i+1}.", "long_term")
 
     memory_system_default.save_to_memory("Initial base memory content.", "base_memory")
@@ -308,7 +308,7 @@ if __name__ == "__main__":
 
     # Add more short-term memories to trigger another check
     print("\n--- Adding More Short-Term Memories ---")
-    for i in range(12):
+    for i in range(22):
         memory_system_default.save_to_memory(f"Additional short-term message {i+1}.", "short_term", "user")
 
     print("\n--- Running Second Memory Check ---")
