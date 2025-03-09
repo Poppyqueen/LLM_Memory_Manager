@@ -84,13 +84,13 @@ class CLIChatbot:
             # here one can choose to append the thinking process to the memories or keep them out
             self.memory.save_to_memory(response, "short_term", "assistant")
             
+            # Uncomment to show AI's thinking process
+            print("\n🧠 Thinking process:")
+            print(f"{thinking}")
+            
             # Display response with optional thinking
             print("\n🤖 Response:")
             print(f"{response}")
-            
-            # Uncomment to show AI's thinking process
-            # print("\n🧠 Thinking process:")
-            # print(f"{thinking}")
             
         except Exception as e:
             print(f"\n❌ Error generating response: {e}")
