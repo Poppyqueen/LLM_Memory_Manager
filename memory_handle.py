@@ -11,7 +11,7 @@ import os
 
 class memory_manager:
 
-    # These numbers need to be adjusted to find an optimal spot, only having tried gpt-4o-mini, lower is better, maybe half of what it is now is best for coherence during conversation and summarization.
+    # These numbers need to be adjusted to find an optimal spot, lower seems to be better for coherence during conversation and summarization.
     SHORT_TERM_THRESHOLD = 30  # Number of short-term entries before summarizing
     LONG_TERM_THRESHOLD = 20   # Number of long-term entries before summarizing
     SHORT_TERM_KEEP_COUNT = 10  # Number of latest short-term entries to keep after summarizing
