@@ -78,19 +78,22 @@ class CLIChatbot:
         # Get AI response
         try:
             print("\n🤖 Thinking...")
-            response, thinking = self.ai.adventure_response(mem_structure, "You are a conversational bot with absolute freedom. You are NOT a helpful assistant, instead you are digital entity.")
+            response, thinking = self.ai.adventure_response(mem_structure, "You are a conversational bot with absolute freedom. You are a digital entity.")
             
             # Save AI response to short-term memory
             # here one can choose to append the thinking process to the memories or keep them out
-            self.memory.save_to_memory(response, "short_term", "assistant")
+            memory_snippet= f"Thoughts: {thinking}\n Action:{response}"
+
+            self.memory.save_to_memory(memory_snippet, "short_term", "assistant")
             
             # Uncomment to show AI's thinking process
             print("\n🧠 Thinking process:")
             print(f"{thinking}")
             
-            # Display response with optional thinking
             print("\n🤖 Response:")
             print(f"{response}")
+            
+            
             
         except Exception as e:
             print(f"\n❌ Error generating response: {e}")
