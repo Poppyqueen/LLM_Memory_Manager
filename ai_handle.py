@@ -144,7 +144,7 @@ Summarize memories into 'nuclear memories' that preserve essential information, 
 
             response_content = completion.choices[0].message.parsed
 
-            print(response_content.thinking) # Print the actual content for debugging/logging
+            #print(response_content.thinking) # Print the actual content for debugging/logging
             #print(response_content.response) # Print the actual content for debugging/logging
 
             return response_content.response, response_content.thinking
