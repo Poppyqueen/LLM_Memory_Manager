@@ -41,6 +41,8 @@ To run this example, you need to install the following and obtain the game data 
 
     The AI will then interact with Zork I automatically. Observe how the AI explores the game world and responds to the game's descriptions.
 
+4. **Inspect the AIs memories** Inside the zork folder a file called `game_memory_db.json` will be created, here you can examine the memory structure of the AI in real time.
+
 **Important Notes:**
 
 *   **Experimental and Demonstrative:** This Zork example is experimental and primarily for demonstration purposes.  Do not expect it to be a highly intelligent or optimal Zork player.  It's designed to showcase the memory system, not advanced game AI.

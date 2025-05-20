@@ -82,7 +82,7 @@ class memory_manager:
 
 
         If you want to add memories, the recommended memory type to use when accesing this in your project is 'short_term'.
-        For the identity tag use 'user' and 'assistant'.
+        For the identity tag use 'user', 'assistant' and 'system'.
 
         Unless you want to get experimental, do not change this.
 

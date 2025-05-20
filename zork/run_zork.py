@@ -8,6 +8,15 @@ import sys
 from ai_handle import ai_bot
 from memory_handle import memory_manager
 # Now you can use ai_bot and memory_manager
+import configparser
+
+config = configparser.ConfigParser()
+
+
+config.read('config.ini')
+sleep_time = int(config['ADVENTURE']['action_sleep_time'])
+
+
 
 shared_bot_instance = ai_bot()
 
@@ -50,10 +59,10 @@ def read_output(timeout=60.0):
     
     if output:
         print("\nZork says:", output)
-        memory_client.save_to_memory(output,"short_term","user")
-        memory_client.check()
+        memory_client.save_to_memory(output,"short_term", "system")
+        #memory_client.check()
 
-        time.sleep(5)
+        time.sleep(sleep_time) # Sleep in between actions
 
     return output
 

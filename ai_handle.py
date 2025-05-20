@@ -12,6 +12,14 @@ from openai import OpenAI
 from helper_tools import construct_data
 from pydantic import BaseModel
 
+import configparser
+
+config = configparser.ConfigParser()
+config.read('config.ini')
+action_model = config['AI']['action_model']
+memory_model = config['AI']['memory_model']
+
+
 class response_strucuture(BaseModel):
     thinking: str
     response: str
@@ -23,7 +31,7 @@ class ai_bot:
 
         try:
             completion = self.client.chat.completions.create(
-                model="gpt-4o-mini",
+                model=memory_model,
                 messages=[
                     {"role": "system", "content": system},
                     {
@@ -136,7 +144,7 @@ Summarize memories into 'nuclear memories' that preserve essential information, 
         try:
             messages_data=construct_data(mem_structure, system_prompt)
             completion = self.client.beta.chat.completions.parse(
-                model="gpt-4o-mini", # Consider making this configurable, or using a more robust model
+                model=action_model, # Consider making this configurable, or using a more robust model
                 messages=messages_data,
                 response_format=response_strucuture
 
